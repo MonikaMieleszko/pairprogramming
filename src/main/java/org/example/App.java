@@ -49,5 +49,18 @@ public class App
         Float avg = (numbers[0] + numbers[1] + numbers[2] + numbers[3]) / 4;
 
         System.out.println(avg);
+
+        //task 4
+    String [] names = new String []{"Jan", "Tomasz", "Piotr", "Jan", "Maciej"};
+    Integer repetitions = 0;
+    for(int i=0; i< names.length; i++){
+        String n = names[i];
+        if(n=="Jan"){
+            repetitions++;
+        }
+    }
+        System.out.println("Number of repetitions of Jan name: " +repetitions);
+
+
     }
 }
