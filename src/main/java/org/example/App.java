@@ -69,5 +69,28 @@ public class App
                 System.out.println("Number of position of Jan name: " + i);
             }
             }
+
+        //task 6
+
+        Integer[] num = new Integer[5];
+
+        num[0]=5;
+        num[1]=10;
+        num[2]=7;
+        num[3]=2;
+        num[4]=-2;
+        Integer max = num[0];
+        for(int i=0; i< num.length;i++){
+            if (num[i] > max){
+                max = num[i];}
+        }
+        System.out.println(max);
+        Integer min = num[0];
+        for(int i=0; i< num.length;i++){
+            if (num[i] < min){
+                min = num[i];}
+        }
+        System.out.println(min);
+
     }
 }
