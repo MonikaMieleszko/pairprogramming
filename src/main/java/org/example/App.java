@@ -32,5 +32,22 @@ public class App
             System.out.println(city);
         //    System.out.println(((i+1)+ ". "+city));
         }
+
+        // Floating point number array
+
+        Float[] numbers = new Float [4];
+
+        numbers[0] = 0.5f;
+        numbers[1] = 1.5f;
+        numbers[2] = -0.5f;
+        numbers[3] = -1.5f;
+
+        Float sum = numbers[0] + numbers[1] + numbers[2] + numbers[3];
+
+        System.out.println(sum);
+
+        Float avg = (numbers[0] + numbers[1] + numbers[2] + numbers[3]) / 4;
+
+        System.out.println(avg);
     }
 }
