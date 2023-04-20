@@ -61,6 +61,13 @@ public class App
     }
         System.out.println("Number of repetitions of Jan name: " +repetitions);
 
-
+    //task 5
+        String [] names2 = new String []{"Jan", "Tomasz", "Piotr", "Łukasz", "Maciej"};
+        for(int i=0; i< names2.length; i++){
+            String n = names2[i];
+            if(n=="Jan"){
+                System.out.println("Number of position of Jan name: " + i);
+            }
+            }
     }
 }
