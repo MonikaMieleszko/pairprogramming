@@ -10,6 +10,8 @@ public class App
     {
 //        System.out.println( "Hello Monika :)" );
 //        System.out.println( "Hello Girls!" );
+
+        //Task 2
         String [] cities = new String [5];
 
         cities[0]="Paryż";
@@ -21,19 +23,20 @@ public class App
         for (int i=0; i< cities.length;i++){
             String city = cities[i];
             System.out.println(city);
-
         }
-        for (int j=4; j>=0; j--){
+
+        for (int j= (cities.length-1); j>=0; j--){
             String city = cities[j];
             System.out.println(city);
         }
+
         for (int i=0; i< cities.length;i+=2) {
             String city = cities[i];
             System.out.println(city);
-        //    System.out.println(((i+1)+ ". "+city));
+
         }
 
-        // Floating point number array
+        // Task 3: Floating point number array
 
         Float[] numbers = new Float [4];
 
@@ -42,31 +45,42 @@ public class App
         numbers[2] = -0.5f;
         numbers[3] = -1.5f;
 
-        Float sum = numbers[0] + numbers[1] + numbers[2] + numbers[3];
+        Float sum = 0.0f;
+
+        for (int i=0; i< numbers.length;i++){
+            sum+=numbers[i];
+        }
 
         System.out.println(sum);
+        Float avg = 0.0f;
 
-        Float avg = (numbers[0] + numbers[1] + numbers[2] + numbers[3]) / 4;
+        avg = sum/ numbers.length;
 
+        if(numbers.length==0){
+            System.out.println("Error: we cannot divide by 0.");
+        }
         System.out.println(avg);
 
         //task 4
     String [] names = new String []{"Jan", "Tomasz", "Piotr", "Jan", "Maciej"};
     Integer repetitions = 0;
+        String repeatedName = "Jan";
     for(int i=0; i< names.length; i++){
         String n = names[i];
-        if(n=="Jan"){
+
+        if(n==repeatedName){
             repetitions++;
         }
     }
-        System.out.println("Number of repetitions of Jan name: " +repetitions);
+        System.out.println("Number of repetitions of "+repeatedName+" name " +repetitions);
 
     //task 5
         String [] names2 = new String []{"Jan", "Tomasz", "Piotr", "Łukasz", "Maciej"};
         for(int i=0; i< names2.length; i++){
             String n = names2[i];
-            if(n=="Jan"){
-                System.out.println("Number of position of Jan name: " + i);
+            String searchedName = "Jan";
+            if(n==searchedName){
+                System.out.println("Number of position of "+searchedName+" is " + i);
             }
             }
 
@@ -79,18 +93,20 @@ public class App
         num[2]=7;
         num[3]=2;
         num[4]=-2;
-        Integer max = num[0];
+        Integer max = Integer.MIN_VALUE;//way to handle even an empty array
         for(int i=0; i< num.length;i++){
             if (num[i] > max){
                 max = num[i];}
         }
         System.out.println(max);
-        Integer min = num[0];
+        Integer min = Integer.MAX_VALUE;
         for(int i=0; i< num.length;i++){
             if (num[i] < min){
                 min = num[i];}
         }
         System.out.println(min);
+
+
 
     }
 }
